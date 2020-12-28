@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<head>
+    <title>Чек</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1 style="text-align: center;">Чек с покупками</h1>
+    <div id="product_list">
+        <div class="header">
+            <div class="prod_name">Наименование</div>
+            <div class="prod_count">Кол-во</div>
+            <div class="prod_cost">Цена</div>
+            <div class="prod_change">Операции</div>
+        </div>
+    </div>
+    <div id="div_sum"></div>
+
+    <input type="button" id="add_button" class="div_button" value="Добавить товар">
+    <input type="button" id="delete_button" class="div_button" value="Удалить выбранные товары">
+    <div id="pre_hider" style="display: none;">
+        <div id="hider"></div>
+        <div style="flex-grow: 1;"></div>
+        <div id="add_edit_form" class="product_form" data-id="-1">
+            <h2 style="text-align: center;">Товар</h2>
+            <div class="form_input_div">
+                <p class="form_input">Название товара</p>
+                <input type="text" id="product_name_t" class="form_input">
+            </div>
+            <div class="form_input_div">
+                <p class="form_input">Количество</p>
+                <input type="number" id="product_count_t" value="1" class="form_input">
+            </div>
+            <div class="form_input_div">
+                <p class="form_input">Цена</p>
+                <input type="text" id="product_cost_t" value="50" class="form_input">
+            </div>
+            <div style="display: flex; flex-grow: 1; flex-direction: row;">
+                <input type="button" id="add_button_form" class="div_button" 
+                value="Добавить" style="align-self: flex-end; height: 50px; width: 40%;">
+                <div style="align-self: flex-end;width: 20%;"></div>
+                <input type="button" id="clear_button_form" class="div_button" 
+                value="Очистить" style="align-self: flex-end; height: 50px; width: 40%;">
+            </div>
+        </div>
+        <div style="flex-grow: 1;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
